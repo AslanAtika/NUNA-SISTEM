@@ -1,0 +1,15 @@
+{
+  "name": "nuna-sistem-local",
+  "version": "0.1.0",
+  "private": true,
+  "license": "CC-BY-4.0",
+  "description": "Playable local NUNA SISTEM prototype; provisional encounter balancing.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "test": "node --test test/*.test.mjs",
+    "playthrough": "node scripts/playthrough.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {"node": ">=20"}
+}

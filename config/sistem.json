@@ -1,0 +1,47 @@
+{
+  "design_revision": "3.14",
+  "status": "design_only",
+  "display_name": "NUNA LOÇIKA SİSTEM LOKAĞL",
+  "internal_id": "nuna_logika_local",
+  "development_language": "en",
+  "host": "Yuki Atlas",
+  "active": "notes_and_grid",
+  "passive": "puzzle_resistance",
+  "fibonacci_progression": [
+    {"id": "w1_a", "rank": 1},
+    {"id": "w1_b", "rank": 1},
+    {"id": "w2", "rank": 2},
+    {"id": "w3", "rank": 3},
+    {"id": "w5", "rank": 5},
+    {"id": "w8", "rank": 8},
+    {"id": "w13", "rank": 13},
+    {"id": "w21", "rank": 21},
+    {"id": "w34", "rank": 34}
+  ],
+  "legendary": {
+    "unlock": "w34",
+    "mastery": true,
+    "roll_result": {"kind": "symbol", "id": "pi", "display": "π"},
+    "guess_cost": 0,
+    "guess_quota": "unlimited",
+    "automatic_reward_grant": false
+  },
+  "robbery": {
+    "risk_increases_with_dice_taken": true,
+    "counting_policy": null,
+    "risk_curve": null,
+    "trigger": null,
+    "warning_lead_time": null,
+    "stealable_items": null,
+    "mastery_exposes_approaching_attempts": true,
+    "automatic_prevention": false
+  },
+  "xenolinguistics": {
+    "named_markers": ["NUUK", "HEXIMA", "GAIA NIRVANA"],
+    "intermediate_stages": null,
+    "canonical_clue_separate_from_display": true
+  },
+  "local_model_required": false,
+  "aws_required": false,
+  "grok_required": false
+}

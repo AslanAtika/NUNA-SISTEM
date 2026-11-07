@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import * as g from '../src/game.mjs';
+const s = g.createGame();
+console.log('AMZN // scripted playthrough; deterministic test samples, not a live random session.');
+g.addNote(s, { text: 'Three lanterns; opposing reflections.', status: 'observation', cell: 0 });
+g.addNote(s, { text: 'The lights may distract from theft.', status: 'interpretation', cell: 1 });
+for (let i = 0; i < 9; i++) console.log('Take:', g.takeDie(s).id);
+console.log('W34:', g.roll(s));
+console.log('Guess:', g.guess(s, 'Watch the hand.'));
+console.log(g.observeHand(s));
+console.log(g.advance(s, () => 0));
+console.log(g.defend(s));
+console.log(g.advance(s));
+console.log(g.claimCrossing(s));
+assert.equal(s.loot, 4);
+assert.deepEqual(g.restore(JSON.stringify(s)), s);
+console.log('PASS: crossing, π, free guess, warning, chosen defense, once-only reward, save/load.');
